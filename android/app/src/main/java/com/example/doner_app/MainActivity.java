@@ -1,4 +1,4 @@
-package com.example.doner_app;
+package com.humhum.client;
 
 
 import android.content.ComponentName;
