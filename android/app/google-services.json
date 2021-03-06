@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "216403942009",
+    "firebase_url": "https://sigma-current-284416.firebaseio.com",
+    "project_id": "sigma-current-284416",
+    "storage_bucket": "sigma-current-284416.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216403942009:android:25404467124b9b034112a8",
+        "android_client_info": {
+          "package_name": "com.humhum.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216403942009-4c610okt1pa7g7eq5hdgc649s2m89pca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Rp8tsd1rr23C_XDluINszzj95XlvBBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216403942009-4c610okt1pa7g7eq5hdgc649s2m89pca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
