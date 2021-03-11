@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:216403942009:android:25404467124b9b034112a8",
         "android_client_info": {
-          "package_name": "com.humhum.client"
+          "package_name": "com.example.doner_app"
         }
       },
       "oauth_client": [

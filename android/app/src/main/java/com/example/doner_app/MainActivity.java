@@ -1,4 +1,4 @@
-package com.humhum.client;
+package com.example.doner_app;
 
 
 import android.content.ComponentName;
@@ -182,11 +182,11 @@ public class MainActivity extends FlutterActivity implements MethodChannel.Resul
         }
 
         CheckoutSettings checkoutSettings = new CheckoutSettings(checkoutId, paymentBrands, Connect.ProviderMode.TEST)
-                .setShopperResultUrl("com.humhum.client://result");
+                .setShopperResultUrl("com.example.doner_app://result");
 
         if (mode.equals("LIVE")) {
             checkoutSettings = new CheckoutSettings(checkoutId, paymentBrands, Connect.ProviderMode.LIVE)
-                    .setShopperResultUrl("com.humhum.client://result");
+                    .setShopperResultUrl("com.example.doner_app://result");
         }
 
         ComponentName componentName = new ComponentName(getPackageName(), CheckoutBroadcastReceiver.class.getName());
@@ -206,7 +206,7 @@ public class MainActivity extends FlutterActivity implements MethodChannel.Resul
 
             try {
                 PaymentParams paymentParams = new PaymentParams(checkoutid, "STC_PAY");
-                paymentParams.setShopperResultUrl("com.humhum.client://result");
+                paymentParams.setShopperResultUrl("com.example.doner_app://result");
                 Transaction transaction = new Transaction(paymentParams);
                 binder.submitTransaction(transaction);
             } catch (PaymentException e) {
@@ -273,7 +273,7 @@ public class MainActivity extends FlutterActivity implements MethodChannel.Resul
                 try {
                     PaymentParams paymentParams = new CardPaymentParams(checkoutid, brand, number, holder, month, year,
                             cvv);
-                    paymentParams.setShopperResultUrl("com.humhum.client://result");
+                    paymentParams.setShopperResultUrl("com.example.doner_app://result");
 
                     Transaction transaction = new Transaction(paymentParams);
                     binder.submitTransaction(transaction);
@@ -440,7 +440,7 @@ public class MainActivity extends FlutterActivity implements MethodChannel.Resul
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
 
-        if (intent.getScheme().equals("com.humhum.client")) {
+        if (intent.getScheme().equals("com.example.doner_app")) {
 
             success("success");
 

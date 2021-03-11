@@ -1,4 +1,4 @@
-package com.humhum.client;
+package com.example.doner_app;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
